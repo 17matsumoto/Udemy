@@ -14,23 +14,23 @@ type Props = {
   };
 };
 const ChatMessage = (props: Props) => {
-  const [messages, setMesseges] = useState("");
+  // const [messages, setMesseges] = useState("");
   const { message, timestamp, user } = props;
 
-  const handleChange = () => {
-    setMesseges((messages) => message + messages);
-  };
+  // const handleChange = () => {
+  //   setMesseges((messages) => message + messages);
+  // };
 
   return (
     <div>
-      <form action="">
+      {/* <form action="">
         <input
           type="text"
           className="messages"
           value={messages}
           onChange={handleChange}
         ></input>
-      </form>
+      </form> */}
       <div className="message">
         <Avatar src={user?.photo} />
         <div className="messageInfo">
